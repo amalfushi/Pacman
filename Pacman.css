@@ -12,7 +12,7 @@
     text-align: center;
 }
 
-.brick, .coin, .empty, #pacman, #ghost{
+.brick, .coin, .empty, .fruit, #pacman, .ghost{
     width: 50px;
     height: 50px;
     display: inline-block;
@@ -35,36 +35,57 @@
 
 .coin{
     /* background-color: goldenrod; */
-    background: url('sandvich.gif');
+    background: url('./images/sandvich.gif');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50px 50px;
     background-color: rebeccapurple;
 }
 
-#pacman{
-    background: url('jake_pacman.gif');
+.fruit{
+    /* background-color: goldenrod; */
+    background: url('./images/Burrito.gif');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50px 50px;
+    background-color: rebeccapurple;
+}
+
+#pacman, .ghost{
     position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px 50px;
+    margin-top:-4px;
+}
+
+#pacman{
+    background: url('./images/jake_pacman.gif');
     left: 800px;
     top: 350px;
-    margin-top:-4px;
-    /* rotate: 90deg; */
+}
+.ghost{
+    background-image: url('./images/Marcyfloat.gif');
+}
+
+#ghost1{
+    left: 750px;
+    top: 300px;
+    
+}
+#ghost2{
+    left: 850px;
+    top: 300px;
+}
+#ghost3{
+    left: 750px;
+    top: 400px;
+}
+#ghost4{
+    left: 850px;
+    top: 400px;
 }
 
 h1{
     text-align: center;
-}
-
-#ghost{
-    /* height: 90px;
-    width: 90px; */
-    position: absolute;
-    left: 750px;
-    top: 300px;
-    /* background-image: url("jake_pacman.gif"); */
-    background-color: red;
-    
 }
